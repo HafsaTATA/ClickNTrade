@@ -1,0 +1,42 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.nav-link{
+    margin-right:20px;
+}
+.heart-icon:hover,
+.heart-icon.clicked {
+    color: #FF69B4 !important; /* Pink color for heart */
+    transform: scale(1.2);
+}
+
+.cart-icon:hover,
+.cart-icon.clicked,
+.person-icon:hover,
+.person-icon.clicked {
+    color: #8ACDD7 !important; /* Blue color for cart and person */
+    transform: scale(1.2);
+}
+
+.icon-click {
+    cursor: pointer;
+}
