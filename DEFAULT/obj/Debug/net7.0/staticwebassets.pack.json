@@ -5,6 +5,78 @@
       "PackagePath": "staticwebassets\\DEFAULT.bundle.scp.css"
     },
     {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\bmw.jpg",
+      "PackagePath": "staticwebassets\\Images\\bmw.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\bmw2.jpg",
+      "PackagePath": "staticwebassets\\Images\\bmw2.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\car1.jpg",
+      "PackagePath": "staticwebassets\\Images\\car1.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\car2.jpg",
+      "PackagePath": "staticwebassets\\Images\\car2.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\car3.jpg",
+      "PackagePath": "staticwebassets\\Images\\car3.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\clothe2.jpg",
+      "PackagePath": "staticwebassets\\Images\\clothe2.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\clothe3.jpg",
+      "PackagePath": "staticwebassets\\Images\\clothe3.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\clothe4.jpg",
+      "PackagePath": "staticwebassets\\Images\\clothe4.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\clothes.jpg",
+      "PackagePath": "staticwebassets\\Images\\clothes.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\electronics.jpg",
+      "PackagePath": "staticwebassets\\Images\\electronics.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\favicon.ico",
+      "PackagePath": "staticwebassets\\Images\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\favicon2.png",
+      "PackagePath": "staticwebassets\\Images\\favicon2.png"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\jeep.jpg",
+      "PackagePath": "staticwebassets\\Images\\jeep.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\jeep1.jpg",
+      "PackagePath": "staticwebassets\\Images\\jeep1.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\jeep2.jpg",
+      "PackagePath": "staticwebassets\\Images\\jeep2.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\jeep3.jpg",
+      "PackagePath": "staticwebassets\\Images\\jeep3.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\moto.jpg",
+      "PackagePath": "staticwebassets\\Images\\moto.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\Images\\pay-per-click.png",
+      "PackagePath": "staticwebassets\\Images\\pay-per-click.png"
+    },
+    {
       "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

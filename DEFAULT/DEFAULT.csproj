@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Images\favicon2.png" />
+    <None Include="wwwroot\Images\pay-per-click.png" />
+  </ItemGroup>
+
 </Project>
