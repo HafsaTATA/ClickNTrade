@@ -2,7 +2,131 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DEFAULT.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy/Z1Qq21xz9Kx2xgCIhP8qX8e9FqEUKjC" crossorigin="anonymous">
+
+    <style>
+        section {
+            margin-right: -100px;
+            margin-left: -100px;
+            height:500px;
+        }
+
+        .yellow {
+            color: #E5D283; /* Yellow color */
+        }
+
+        .group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 40px; /* Add margin-top as needed */
+            position: relative;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .input {
+            width: 100%;
+            height: 40px;
+            line-height: 28px;
+            padding: 0 1rem;
+            padding-left: 2.5rem;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            outline: none;
+            background-color: #f3f3f4;
+            color: #0d0c22;
+            transition: 0.3s ease;
+        }
+
+
+            .input::placeholder {
+                color: #9e9ea7;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 200;
+            }
+
+            .input:focus,
+            input:hover {
+                outline: none;
+                border-color: #4F709C;
+                background-color: #fff;
+                box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+            }
+
+        .icon {
+            position: absolute;
+            left: 0.75rem; /* Adjust the left position as needed */
+            top: 50%; /* Center the icon vertically */
+            transform: translateY(-50%); /* Center the icon vertically */
+            fill: #9e9ea7;
+            width: 1rem;
+            height: 1rem;
+        }
+
+
+
+        
+    </style>
+</head>
+<body>
+
+    <section style="background-color: #F0F0F0; padding: 20px; margin-top:-20px;">
+        <div class="container-fluid text-center">
+            <div class="welcome">
+
+                <p>Discover <br /> <span class="yellow">a world </span> <br />of endless possibilities.</p>
+            </div>
+
+            <p class="subWelcome">Find what you need, when you need it. Our platform is designed to make your shopping experience seamless and enjoyable.</p>
+
+            <div class="group">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+                <input class="input" type="search" placeholder="Search for product" />
+            </div>
+
+        </div>
+    </section>
+
+    <section style="background-color: #213555; padding: 20px;">
+        <div class="container-fluid text-center">
+            <h2>Section 2</h2>
+            <p>This is the second section with a light green background.</p>
+        </div>
+    </section>
+
+    <section style="background-color: #87CEEB; padding: 20px;">
+        <div class="container-fluid text-center">
+            <h2>Section 3</h2>
+            <p>This is the third section with a sky blue background.</p>
+        </div>
+    </section>
+
+    <section style="background-color: #FFA07A; padding: 20px;">
+        <div class="container-fluid text-center">
+            <h2>Section 4</h2>
+            <p>This is the fourth section with a light salmon background.</p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy/Z1Qq21xz9Kx2xgCIhP8qX8e9FqEUKjC" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy/Z1Qq21xz9Kx2xgCIhP8qX8e9FqEUKjC" crossorigin="anonymous"></script>
+</body>
+</html>
