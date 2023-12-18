@@ -312,3 +312,121 @@ body {
 .sec3 {
     color: #213555;
 }
+#fixedBottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 110%; /* Set to 100% to take the whole screen width */
+    background-color: #fff;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    overflow: hidden; /* Hide the overflow to prevent scrollbar */
+    white-space: nowrap;
+}
+
+.RightToLeft {
+    white-space: nowrap;
+    display: inline-block;
+    animation: RightToLeft 40s infinite linear;
+}
+
+@keyframes RightToLeft {
+    from {
+        transform: translateX(50%); /* Start from the right edge */
+    }
+
+    to {
+        transform: translateX(-100%); /* Move to the left edge */
+    }
+}
+
+.scrolling-container {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 40px;
+}
+
+.sale-product {
+    min-width: 20%;
+    height: 320px;
+    overflow: hidden;
+    border-radius:20px;
+    scroll-snap-align:center;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+    height:5px;
+}
+::-webkit-scrollbar-track{
+    box-shadow:inset 0 0  5px gray;
+    border-radius:4px;
+}
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius:4px;
+}
+#onSale {
+    margin:88px 0 -10px 40px;
+    font-family: Poppins;
+    font-size: 2em;
+    color: #212529;
+    font-weight: 700;
+}
+#gift{
+margin-left:-300px;
+margin-top:70px;
+}
+.card-image {
+    background-image: url('../Images/clothe3.jpg');
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+}
+
+.sale-product {
+    text-align: left; /* Align text to the left */
+    backdrop-filter: blur(5px);
+}
+
+.sale {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #212529; 
+    padding: 10px 7px 0;
+}
+
+    .sale:hover {
+        cursor: pointer;
+    }
+
+.description {
+    font-weight: 600;
+    color: #808080; 
+    padding: 7px;
+}
+
+    .description:hover {
+        cursor: pointer;
+    }
+
+.price {
+    color: #808080; /* Gray color for the original price */
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 5px; /* Reduced padding */
+    text-decoration: line-through; /* Add line-through property */
+}
+
+.newprice {
+    color: darkred;
+    font-weight: 400;
+    font-size: 1em;
+    padding-top: 5px; /* Reduced padding */
+}

@@ -21,4 +21,14 @@ $("#clothes").on("click", function () {
     window.location.href = "/clothes";
 });
 
+//les promotions:
+
+const container = document.getElementById('scrolling-container');
+const productWidth = 220; // Width of each product card including margin
+
+function scrollProducts(direction) {
+    const scrollAmount = direction === 'right' ? -productWidth : productWidth;
+    container.style.transform = `translateX(${scrollAmount}px)`;
+}
+
 

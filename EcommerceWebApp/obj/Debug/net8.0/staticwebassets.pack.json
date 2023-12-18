@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\Images\\favicon2.png"
     },
     {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\Images\\gift-box.png",
+      "PackagePath": "staticwebassets\\Images\\gift-box.png"
+    },
+    {
       "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\Images\\jeep.jpg",
       "PackagePath": "staticwebassets\\Images\\jeep.jpg"
     },

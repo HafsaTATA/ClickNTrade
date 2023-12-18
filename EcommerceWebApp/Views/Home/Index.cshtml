@@ -18,7 +18,7 @@
         section {
             margin-right: -100px;
             margin-left: -100px;
-            height: 500px;
+            
         }
 
         .yellow {
@@ -80,7 +80,7 @@
 </head>
 <body>
 
-    <section id="sec1">
+    <section id="sec1" style="height:900px">
         <div class="container-fluid text-center">
             <div class="welcome">
 
@@ -97,9 +97,45 @@
             </div>
 
         </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 id="onSale">Products on Sale :</h2>
+                </div>
+                <div class="col-md-6">
+                    <img id ="gift" src="~/Images/gift-box.png" height="50" width="50" />
+                </div>
+            </div>
+        </div>
+        <div class="scrolling-container" id="scrolling-container">
+           
+            <!-- Your sale product elements go here -->
+            <div class="sale-product">
+                <div class="card-image"></div>
+                <div class="sale"> 50% </div>
+                <div class="description">
+                    A modest dress of denim for Defacto,Turkey
+                    <div class="price"> 500 MAD </div>
+                    <div class="newprice"> 250 MAD </div>
+                </div>
+            </div>
+            <div class="sale-product"></div>
+            <div class="sale-product" ></div>
+            <div class="sale-product"></div>
+            <div class="sale-product"></div>
+            <div class="sale-product" ></div>
+            <div class="sale-product"></div>
+            <div class="sale-product"></div>
+            <div class="sale-product"></div>
+            <div class="sale-product" ></div>
+        </div>
+
     </section>
 
-    <section id="sec2" style="background-color: #213555; padding: 20px;">
+
+    <section id="sec2" style="background-color: #213555; padding: 20px; height: 500px;">
         <div class="container-fluid text-center">
             <div class="row" style="margin-top:70px;">
                 <!-- Left column with text -->
@@ -125,7 +161,7 @@
     </section>
 
 
-    <section style="background-color: #87CEEB; padding: 20px;">
+    <section style="background-color: #87CEEB; padding: 20px; height: 500px;">
         <div class="container-fluid text-center">
             <div class="row" style="margin-top:70px;">
                 <!-- Left column with text -->
@@ -172,6 +208,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="fixedBottom">
+        <div class="RightToLeft">
+            <p id="fixed_text">
+                Explore our exclusive collection of <strong>discounted products!</strong>  Uncover unbeatable deals and extraordinary savings on a wide range of items. From fashion to electronics, home decor to gadgets – we have something special for everyone. Don't miss out on <strong>these limited-time offers!</strong> Hurry and discover the joy of smart shopping with our exciting discounts. Check out our products on sale now and treat yourself to quality at unbeatable prices!
+            </p>
         </div>
     </section>
 
