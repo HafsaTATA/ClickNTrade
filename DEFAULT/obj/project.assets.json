@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\hp\\.nuget\\packages\\": {}
+    "C:\\Users\\pro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\DEFAULT.csproj",
+      "projectUniqueName": "C:\\Users\\pro\\Documents\\info2\\ClickNTrade\\DEFAULT\\DEFAULT.csproj",
       "projectName": "DEFAULT",
-      "projectPath": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\DEFAULT.csproj",
-      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\info2\\C_sharp\\ASP\\Projet\\DEFAULT\\obj\\",
+      "projectPath": "C:\\Users\\pro\\Documents\\info2\\ClickNTrade\\DEFAULT\\DEFAULT.csproj",
+      "packagesPath": "C:\\Users\\pro\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pro\\Documents\\info2\\ClickNTrade\\DEFAULT\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
