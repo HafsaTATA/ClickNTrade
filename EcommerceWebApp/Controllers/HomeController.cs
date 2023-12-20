@@ -22,7 +22,26 @@ namespace EcommerceWebApp.Controllers
         {
             return View();
         }
-
+        public IActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult item()
+        {
+            return View();
+        }
+        public IActionResult Clothes()
+        {
+            return View();
+        }
+        public IActionResult Vehicles()
+        {
+            return View();
+        }
+        public IActionResult Electronics()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

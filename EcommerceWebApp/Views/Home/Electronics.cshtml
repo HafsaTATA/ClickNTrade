@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewData["Title"] = "Electronics";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/styleClothes.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/EcommerceWebApp.styles.css" asp-append-version="true" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>ECommerce-ShoppingCart | Korsat X Parmaga</title>
+
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Section1   (header)  -->
+    <section>
+        <!-- NAV  -->
+        <div class="nav container">
+            <!-- CART ICON  -->
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+            <!-- CART  -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy">Buy Now</button>
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SHOP SECTION  -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Household Appliances</h2>
+
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61LB5Vh7hzL._AC_SY741_.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Short Sweater Dresses </h2>
+                <span class="product-price">$79.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="~/clothes/product2.jpg" alt="" class="product-img">
+                <h2 class="product-title">BACKPACK</h2>
+                <span class="product-price">$59.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="~/clothes/product3.jpg" alt="" class="product-img">
+                <h2 class="product-title">METAL BOTTLE</h2>
+                <span class="product-price">$29.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="~/clothes/product4.jpg" alt="" class="product-img">
+                <h2 class="product-title">METAL SUNGLASSES</h2>
+                <span class="product-price">$105</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="~/clothes/product5.jpg" alt="" class="product-img">
+                <h2 class="product-title">PS5 Controller</h2>
+                <span class="product-price">$95</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="~/clothes/product6.jpg" alt="" class="product-img">
+                <h2 class="product-title">Galaxy Z Fold</h2>
+                <span class="product-price">$1400</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 7 -->
+            <div class="product-box">
+                <img src="~/clothes/product7.jpg" alt="" class="product-img">
+                <h2 class="product-title">Nokon Camera</h2>
+                <span class="product-price">$1700</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 8 -->
+            <div class="product-box">
+                <img src="~/clothes/product8.jpg" alt="" class="product-img">
+                <h2 class="product-title">Apple Watch</h2>
+                <span class="product-price">$110.5</span>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- link js  -->
+    <!--<script src="~/js/main.js"></script>-->
+</body>
+
+</html>

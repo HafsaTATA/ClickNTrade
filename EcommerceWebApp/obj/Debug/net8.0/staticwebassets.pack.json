@@ -81,8 +81,56 @@
       "PackagePath": "staticwebassets\\Images\\pay-per-click.png"
     },
     {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\clothes\\product1.jpg",
+      "PackagePath": "staticwebassets\\clothes\\product1.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\clothes\\product2.jpg",
+      "PackagePath": "staticwebassets\\clothes\\product2.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\clothes\\product3.jpg",
+      "PackagePath": "staticwebassets\\clothes\\product3.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\clothes\\product4.jpg",
+      "PackagePath": "staticwebassets\\clothes\\product4.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\clothes\\product5(1).jpg",
+      "PackagePath": "staticwebassets\\clothes\\product5(1).jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\clothes\\product5.jpg",
+      "PackagePath": "staticwebassets\\clothes\\product5.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\clothes\\product6.jpg",
+      "PackagePath": "staticwebassets\\clothes\\product6.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\clothes\\product7.jpg",
+      "PackagePath": "staticwebassets\\clothes\\product7.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\clothes\\product8.jpg",
+      "PackagePath": "staticwebassets\\clothes\\product8.jpg"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\css\\itemStyle.css",
+      "PackagePath": "staticwebassets\\css\\itemStyle.css"
+    },
+    {
       "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\css\\styleClothes.css",
+      "PackagePath": "staticwebassets\\css\\styleClothes.css"
+    },
+    {
+      "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\css\\styleLogin.css",
+      "PackagePath": "staticwebassets\\css\\styleLogin.css"
     },
     {
       "Id": "D:\\Documents\\info2\\C_sharp\\ASP\\EcommerceWebApp\\EcommerceWebApp\\wwwroot\\favicon.ico",
