@@ -93,22 +93,21 @@
                         <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
                     </g>
                 </svg>
-                <input class="input" type="search" placeholder="Search for product" />
+                <input id="search-input" class="input" type="search" placeholder="Search for product" />
             </div>
+
+            <div id="search-results"></div>
+
 
         </div>
         <!--SLIDES HERE-->
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 id="onSale">Products on Sale :</h2>
-                </div>
-                <div class="col-md-6">
-                    <img id ="gift" src="~/Images/gift-box.png" height="50" width="50" />
-                </div>
-            </div>
-        </div>
+            
+        <h2 id="onSale" class="d-flex align-items-center justify-content-center">
+            Products on Sale 
+            <img id="gift" src="~/Images/gift-box.png" height="50" width="50" />
+        </h2>
+
 
         <div class="scrolling-container" id="scrolling-container">
            
@@ -116,8 +115,10 @@
             <div class="sale-product">
                 <div class="card-image"></div>
                 <div class="sale"> 50% </div>
+                <div class="date"><label>Date debut: </label> 11/12/2023</div>
+                <div class="date"><label>Date Fin: </label> 01/01/2024</div>
                 <div class="description">
-                    A modest dress of denim for Defacto,Turkey
+                    A modest dress 
                     <div class="price"> 500 MAD </div>
                     <div class="newprice"> 250 MAD </div>
                 </div>
@@ -222,5 +223,38 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy/Z1Qq21xz9Kx2xgCIhP8qX8e9FqEUKjC" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy/Z1Qq21xz9Kx2xgCIhP8qX8e9FqEUKjC" crossorigin="anonymous"></script>
+
+    <script>
+
+        //------------------------------------SEARCH BAR IN HOME/KINDEX.CSHTML-----------------------------------------
+        $(document).ready(function () {
+            var productList = ["Product 1", "Product 2", "Product 3", "Product 4", "Product 5"];
+            var resultsContainer = $("#search-results");
+
+            $("#search-input").on("input", function () {
+                var query = $(this).val().toLowerCase();
+                var results = productList.filter(function (product) {
+                    return product.toLowerCase().includes(query);
+                });
+                displayResults(results);
+            });
+
+            function displayResults(results) {
+                resultsContainer.empty();
+
+                if (results.length > 0) {
+                    var ul = $("<ul>");
+                    results.forEach(function (result) {
+                        ul.append($("<li>").text(result));
+                    });
+                    resultsContainer.append(ul);
+                } else {
+                    resultsContainer.text("No results found.");
+                }
+            }
+        });
+    </script>
+
+
 </body>
 </html>

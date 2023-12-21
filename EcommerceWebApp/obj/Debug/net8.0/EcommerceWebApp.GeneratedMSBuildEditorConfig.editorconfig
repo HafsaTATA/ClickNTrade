@@ -38,20 +38,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Documents/info2/C_sharp/ASP/EcommerceWebApp/EcommerceWebApp/Views/Home/item.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/info2/C_sharp/ASP/EcommerceWebApp/EcommerceWebApp/Views/Home/itemEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpdGVtRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Documents/info2/C_sharp/ASP/EcommerceWebApp/EcommerceWebApp/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documents/info2/C_sharp/ASP/EcommerceWebApp/EcommerceWebApp/Views/Home/LoginProprietaire.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpblByb3ByaWV0YWlyZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documents/info2/C_sharp/ASP/EcommerceWebApp/EcommerceWebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Documents/info2/C_sharp/ASP/EcommerceWebApp/EcommerceWebApp/Views/Home/Profil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Documents/info2/C_sharp/ASP/EcommerceWebApp/EcommerceWebApp/Views/Home/Vehicles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWZWhpY2xlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Documents/info2/C_sharp/ASP/EcommerceWebApp/EcommerceWebApp/Views/Products/item.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcaXRlbS5jc2h0bWw=
+[D:/Documents/info2/C_sharp/ASP/EcommerceWebApp/EcommerceWebApp/Views/Home/_SearchResultsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfU2VhcmNoUmVzdWx0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Documents/info2/C_sharp/ASP/EcommerceWebApp/EcommerceWebApp/Views/Shared/Error.cshtml]

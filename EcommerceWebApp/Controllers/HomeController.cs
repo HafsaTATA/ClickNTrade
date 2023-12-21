@@ -42,6 +42,19 @@ namespace EcommerceWebApp.Controllers
         {
             return View();
         }
+        public IActionResult Profil()
+        {
+            return View();
+        }
+        public IActionResult itemEdit()
+        {
+            return View();
+        }
+        public IActionResult LoginProprietaire()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

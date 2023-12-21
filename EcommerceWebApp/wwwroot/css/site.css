@@ -372,16 +372,13 @@ body {
     border-radius:4px;
 }
 #onSale {
-    margin:88px 0 -10px 40px;
+    margin:88px 0 -10px 0;
     font-family: Poppins;
     font-size: 2em;
     color: #212529;
     font-weight: 700;
 }
-#gift{
-margin-left:-300px;
-margin-top:70px;
-}
+
 .card-image {
     background-image: url('../Images/clothe3.jpg');
     width: 100%;
@@ -409,7 +406,14 @@ margin-top:70px;
 .description {
     font-weight: 600;
     color: #808080; 
-    padding: 7px;
+    padding: 0 7px;
+
+}
+.date {
+    font-size: 0.7em;
+    font-weight: 400;
+    color: #212529;
+    padding-left: 7px;
 }
 
     .description:hover {
@@ -428,7 +432,6 @@ margin-top:70px;
     color: darkred;
     font-weight: 400;
     font-size: 1em;
-    padding-top: 5px; /* Reduced padding */
 }
 
 /*---signin_out---*/
@@ -461,3 +464,37 @@ margin-top:70px;
 .categories-dropdown li {
     margin-bottom: 5px;
 }
+/*search bar*/
+#search-results {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    width: 30% !important; /* Add !important here */
+    max-height: 100px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    text-align: left; /* Adjust text alignment */
+}
+
+    #search-results .result {
+        padding: 8px;
+        border-bottom: 1px solid #eee;
+        list-style: none !important;
+    }
+
+    /* Optional: Add styles for the scrollbar */
+    #search-results::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #search-results::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px gray;
+        border-radius: 4px;
+    }
+
+    #search-results::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 4px;
+    }
