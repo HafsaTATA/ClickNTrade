@@ -179,19 +179,6 @@ function handle_changeItemQuantity() {
     update();
 }
 
-function handle_buyOrder() {
-    if (itemsAdded.length <= 0) {
-        alert("There is No Order to Place Yet! \nPlease Make an Order first.");
-        return;
-    }
-    const cartContent = cart.querySelector(".cart-content");
-    cartContent.innerHTML = "";
-    alert("Your Order is Placed Successfully :)");
-    itemsAdded = [];
-
-    update();
-}
-
 // =========== UPDATE & RERENDER FUNCTIONS =========
 function updateTotal() {
     let cartBoxes = document.querySelectorAll(".cart-box");
@@ -227,3 +214,18 @@ function CartBoxComponent(title, price, imgSrc) {
     </div>`;
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// LES INFOS D CARTE BANCAIRE
+$(document).ready(function () {
+    // Open modal when the button is clicked
+    $("#openModalBtn").click(function () {
+        $("#blurredBackground").fadeIn();
+        $("#myModal").fadeIn();
+    });
+
+    // Close modal when the close button is clicked
+    $("#closeModalBtn").click(function () {
+        $("#blurredBackground").fadeOut();
+        $("#myModal").fadeOut();
+    });
+});
