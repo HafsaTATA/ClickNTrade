@@ -1,0 +1,196 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+
+body {
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    height:800px;
+
+}
+
+main {
+    max-width: 720px;
+    margin: 5% auto;
+}
+
+.card {
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+    transition: 200ms;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:auto;
+    margin-top:-100px;
+    position: relative;
+    height:560px;
+}
+
+.card__title {
+    display: flex;
+    align-items: center;
+}
+
+    .card__title .icon {
+        background: #213555;
+        color: #fff;
+        padding: 10px;
+        margin-right: 10px;
+        width: 70%;
+    }
+
+    .card__title h4 {
+        margin: 0;
+        color: #252525;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .card__title .new-product {
+        margin: 0;
+        color: #115dd8;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        align-self: flex-start;
+    }
+
+.card__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+}
+
+.half {
+    box-sizing: border-box;
+    padding: 0 10px; /* Adjusted padding for smaller horizontal space */
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 48%;
+}
+
+.image {
+    flex: 0 0 48%;
+    padding-right: 10px; /* Adjusted padding for smaller horizontal space */
+}
+
+    .image img {
+        max-width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+
+.featured_text {
+    margin-bottom: 10px;
+    
+}
+
+    .featured_text h3 {
+        margin: 20px 0;
+        font-weight: 800;
+        font-size: 3em;
+        line-height: 24px; /* Reduced line height */
+        color: #181e28;
+    }
+
+    .featured_text p {
+        margin: 0;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 16px; /* Reduced font size */
+        line-height: 1.4; /* Adjusted line height */
+        color: #252525;
+    }
+
+
+.description p {
+    margin-top:10%;
+    font-weight: 300;
+    line-height: 20px; /* Reduced line height */
+    font-size: 16px; /* Reduced font size */
+    color: #555;
+}
+
+.stock {
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #a1cc16;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .reviews .stars {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+        .reviews .stars li {
+            display: inline-block;
+        }
+
+        .reviews .stars .fa {
+            color: #f7c01b;
+        }
+
+    .reviews span {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        color: #555;
+    }
+
+.card__footer {
+    display: flex;
+    flex-direction: row; /* Adjusted to row */
+    justify-content: space-between; /* Added to distribute items along the main axis */
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.recommend {
+    margin-top: 20px;
+}
+
+    .recommend p {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        color: #555;
+    }
+
+    .recommend h3 {
+        margin: 0;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #4F709C;
+    }
+
+.action button {
+    cursor: pointer;
+    border: 1px solid #4F709C;
+    padding: 15px 30px;
+    border-radius: 200px;
+    color: #fff;
+    background: #4F709C;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    transition: 200ms;
+    margin-top: 20px;
+}
+
+    .action button:hover {
+        background: #fff;
+        color: #4F709C;
+    }

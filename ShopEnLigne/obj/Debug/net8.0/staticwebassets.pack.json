@@ -1,0 +1,617 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ShopEnLigne.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ShopEnLigne.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\MC12.jpg",
+      "PackagePath": "staticwebassets\\Images\\MC12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\audi.jpg",
+      "PackagePath": "staticwebassets\\Images\\audi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\bd.jpg",
+      "PackagePath": "staticwebassets\\Images\\bd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\bmw.jpg",
+      "PackagePath": "staticwebassets\\Images\\bmw.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\bmw2.jpg",
+      "PackagePath": "staticwebassets\\Images\\bmw2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\boy.jpg",
+      "PackagePath": "staticwebassets\\Images\\boy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\bugati.jpeg",
+      "PackagePath": "staticwebassets\\Images\\bugati.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\c.jpg",
+      "PackagePath": "staticwebassets\\Images\\c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\cachcole.jpg",
+      "PackagePath": "staticwebassets\\Images\\cachcole.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\car1.jpg",
+      "PackagePath": "staticwebassets\\Images\\car1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\car2.jpg",
+      "PackagePath": "staticwebassets\\Images\\car2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\car3.jpg",
+      "PackagePath": "staticwebassets\\Images\\car3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\casque.jpg",
+      "PackagePath": "staticwebassets\\Images\\casque.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\chaise.jpg",
+      "PackagePath": "staticwebassets\\Images\\chaise.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\chemise.jpg",
+      "PackagePath": "staticwebassets\\Images\\chemise.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\cheverole.jpg",
+      "PackagePath": "staticwebassets\\Images\\cheverole.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\citroen.jpg",
+      "PackagePath": "staticwebassets\\Images\\citroen.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\clothe2.jpg",
+      "PackagePath": "staticwebassets\\Images\\clothe2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\clothe3.jpg",
+      "PackagePath": "staticwebassets\\Images\\clothe3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\clothe4.jpg",
+      "PackagePath": "staticwebassets\\Images\\clothe4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\clothes.jpg",
+      "PackagePath": "staticwebassets\\Images\\clothes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\costume.jpg",
+      "PackagePath": "staticwebassets\\Images\\costume.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\costume1.jpg",
+      "PackagePath": "staticwebassets\\Images\\costume1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\dress1.jpg",
+      "PackagePath": "staticwebassets\\Images\\dress1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\dress2.jpg",
+      "PackagePath": "staticwebassets\\Images\\dress2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\dress3.jpg",
+      "PackagePath": "staticwebassets\\Images\\dress3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\dressB.jpg",
+      "PackagePath": "staticwebassets\\Images\\dressB.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\dressG.jpg",
+      "PackagePath": "staticwebassets\\Images\\dressG.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\dressJapo.jpg",
+      "PackagePath": "staticwebassets\\Images\\dressJapo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\dressR.jpg",
+      "PackagePath": "staticwebassets\\Images\\dressR.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\dressYellow.jpg",
+      "PackagePath": "staticwebassets\\Images\\dressYellow.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\elec.jpg",
+      "PackagePath": "staticwebassets\\Images\\elec.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\electronics.jpg",
+      "PackagePath": "staticwebassets\\Images\\electronics.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\favicon.ico",
+      "PackagePath": "staticwebassets\\Images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\favicon2.png",
+      "PackagePath": "staticwebassets\\Images\\favicon2.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\fer.jpg",
+      "PackagePath": "staticwebassets\\Images\\fer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\ferrari.jpg",
+      "PackagePath": "staticwebassets\\Images\\ferrari.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\gift-box.png",
+      "PackagePath": "staticwebassets\\Images\\gift-box.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\grl.jpg",
+      "PackagePath": "staticwebassets\\Images\\grl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\h.jpg",
+      "PackagePath": "staticwebassets\\Images\\h.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\house.jpg",
+      "PackagePath": "staticwebassets\\Images\\house.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\house2.jpg",
+      "PackagePath": "staticwebassets\\Images\\house2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\house3.jpg",
+      "PackagePath": "staticwebassets\\Images\\house3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\imprimante.jpg",
+      "PackagePath": "staticwebassets\\Images\\imprimante.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\jeep.jpg",
+      "PackagePath": "staticwebassets\\Images\\jeep.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\jeep1.jpg",
+      "PackagePath": "staticwebassets\\Images\\jeep1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\jeep2.jpg",
+      "PackagePath": "staticwebassets\\Images\\jeep2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\jeep3.jpg",
+      "PackagePath": "staticwebassets\\Images\\jeep3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\jeep4.jpeg",
+      "PackagePath": "staticwebassets\\Images\\jeep4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\lamborghini.webp",
+      "PackagePath": "staticwebassets\\Images\\lamborghini.webp"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\machineALaver.jpeg",
+      "PackagePath": "staticwebassets\\Images\\machineALaver.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\maserati.jpg",
+      "PackagePath": "staticwebassets\\Images\\maserati.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\maseratiNew.jpg",
+      "PackagePath": "staticwebassets\\Images\\maseratiNew.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\merc.jpg",
+      "PackagePath": "staticwebassets\\Images\\merc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\merc2.jpg",
+      "PackagePath": "staticwebassets\\Images\\merc2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\merc3.jpg",
+      "PackagePath": "staticwebassets\\Images\\merc3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\merc4.jpg",
+      "PackagePath": "staticwebassets\\Images\\merc4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\merc5.jpg",
+      "PackagePath": "staticwebassets\\Images\\merc5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\mercedes.jpg",
+      "PackagePath": "staticwebassets\\Images\\mercedes.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\monto.jpg",
+      "PackagePath": "staticwebassets\\Images\\monto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\moto.jpg",
+      "PackagePath": "staticwebassets\\Images\\moto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\moto1.jpg",
+      "PackagePath": "staticwebassets\\Images\\moto1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\moulinex.jpeg",
+      "PackagePath": "staticwebassets\\Images\\moulinex.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\mouna.jpg",
+      "PackagePath": "staticwebassets\\Images\\mouna.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\nami.jpg",
+      "PackagePath": "staticwebassets\\Images\\nami.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\noway.jpg",
+      "PackagePath": "staticwebassets\\Images\\noway.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\oooh.jpg",
+      "PackagePath": "staticwebassets\\Images\\oooh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\pay-per-click.png",
+      "PackagePath": "staticwebassets\\Images\\pay-per-click.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\pc.jpg",
+      "PackagePath": "staticwebassets\\Images\\pc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\peugeot.jpg",
+      "PackagePath": "staticwebassets\\Images\\peugeot.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\play.jpg",
+      "PackagePath": "staticwebassets\\Images\\play.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\press.jpg",
+      "PackagePath": "staticwebassets\\Images\\press.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\pyjama.jpg",
+      "PackagePath": "staticwebassets\\Images\\pyjama.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\respirateur.jpg",
+      "PackagePath": "staticwebassets\\Images\\respirateur.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\soBeautifull.jpg",
+      "PackagePath": "staticwebassets\\Images\\soBeautifull.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\souris.jpg",
+      "PackagePath": "staticwebassets\\Images\\souris.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\swatch.jpg",
+      "PackagePath": "staticwebassets\\Images\\swatch.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\t-shirt.jpg",
+      "PackagePath": "staticwebassets\\Images\\t-shirt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\tricot.jpg",
+      "PackagePath": "staticwebassets\\Images\\tricot.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\voiture.jpg",
+      "PackagePath": "staticwebassets\\Images\\voiture.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\yukiko.jpg",
+      "PackagePath": "staticwebassets\\Images\\yukiko.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\Images\\zoro.jpg",
+      "PackagePath": "staticwebassets\\Images\\zoro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\css\\Profilestyle.css",
+      "PackagePath": "staticwebassets\\css\\Profilestyle.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\css\\StyleDashboard.css",
+      "PackagePath": "staticwebassets\\css\\StyleDashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\css\\itemStyle.css",
+      "PackagePath": "staticwebassets\\css\\itemStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\css\\payStyle.css",
+      "PackagePath": "staticwebassets\\css\\payStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\css\\styleBien.css",
+      "PackagePath": "staticwebassets\\css\\styleBien.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\css\\styleLogin.css",
+      "PackagePath": "staticwebassets\\css\\styleLogin.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\source\\repos\\ShopEnLigne\\ShopEnLigne\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ShopEnLigne.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ShopEnLigne.props",
+      "PackagePath": "build\\ShopEnLigne.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ShopEnLigne.props",
+      "PackagePath": "buildMultiTargeting\\ShopEnLigne.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ShopEnLigne.props",
+      "PackagePath": "buildTransitive\\ShopEnLigne.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,187 @@
+﻿@model ShopEnLigne.Models.Bien
+@{
+    ViewData["Title"] = "itemEdit";
+}
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/itemStyle.css">
+    <link rel="stylesheet" href="~/ShopEnLigne.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="/path/to/fontawesome-free-5.15.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-lU1BpYaaVdL/YNtEIk8C1Q5s9VbU8e+I8DHun6LZvSWCvvnE/AK3f9t5KDIyS2J" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-c77/bMrDLViUjVa2l7JkrkPd1YVN2oS3TEmOH5BrFi1HZ6fkRUP6D0eT4+7lgL2Pd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy/Z1Qq21xz9Kx2xgCIhP8qX8e9FqEUKjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-c77/bMrDLViUjVa2l7JkrkPd1YVN2oS3TEmOH5BrFi1HZ6fkRUP6D0eT4+7lgL2Pd" crossorigin="anonymous">
+
+    <style>
+        #delete {
+            cursor: pointer;
+            border: 1px solid darkred;
+            padding: 14px 30px;
+            border-radius: 200px;
+            color: #fff;
+            background: darkred;
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            transition: 200ms;
+            margin-top: 20px;
+        }
+
+            #delete:hover {
+                background: #fff;
+                color: darkred;
+            }
+
+        .cardImage {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            perspective: 1000px;
+            box-shadow: 0 0 0 5px #ffffff80;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+            .cardImage svg {
+                width: 48px;
+                fill: #333;
+                transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+
+            .cardImage:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+            }
+
+        .card__content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+            transform: rotateX(-90deg);
+            transform-origin: bottom;
+            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .cardImage:hover .card__content {
+            transform: rotateX(0deg);
+        }
+
+        .card__title {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .cardImage:hover svg {
+            scale: 0;
+        }
+
+        .card__description {
+            margin: 10px 0 0;
+            font-size: 14px;
+            color: #777;
+            line-height: 1.4;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="card" style="height:700px">
+            <form asp-action="Edit" asp-controller="Biens" method="post">
+            <div class="card__title">
+                <div class="icon">
+                </div>
+                <h3>Best products</h3>
+            </div>
+            <div class="card__body">
+                <div class="half">
+                    <div class="featured_text">
+                        <label>Product name: </label><h1><input asp-for="Titre" type="text" style="width: 230px; margin-top:-20px;" /></h1>
+                        <label>Product price:</label><input asp-for="Prix" type="number" style="width: 230px; margin-top:-20px;" /><p class="prix"></p>
+                    </div>
+                        <div class="image" style="margin-bottom:20px;margin-top:20px">
+                            <input asp-for="Photo" type="file" id="uploadInput" style="display: none;" onchange="handleFileUpload()" />
+                            <label for="uploadInput" class="cardImage">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+                                </svg>
+                                <div class="card__content">
+                                    <p class="card__title">Add Image</p>
+                                    <p class="card__description">
+                                        Your image is the focal point here, so go ahead and initiate the interaction by uploading the product photo!
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                </div>
+                <div class="half">
+                    <div class="description">
+                        <p><p><label>Product description :</label><textarea asp-for="Description" rows="10" style="margin-top: 10px;"></textarea></p></p>
+                    </div>
+                    <span class="stock"><input asp-for="IsAvailable" type="checkbox" id="stockCheckbox"><i class="fa fa-pen"></i> In stock</span>
+
+                </div>
+            </div>
+                <div class="form-group">
+                    <label asp-for="UserId" class="control-label"></label>
+                    <select asp-for="UserId" class="form-control" asp-items="ViewBag.UserId"></select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="CategorieId" class="control-label"></label>
+                    <select asp-for="CategorieId" class="form-control" asp-items="ViewBag.CategorieId"></select>
+                </div>
+            
+            <div class="card__footer">
+                <div class="action">
+                    <button type="submit">Save changes</button>
+                </div>
+            </form>
+                    <div class="action">
+                        <form asp-action="Delete">
+                            <input type="hidden" asp-for="Id" />
+                            <input type="submit" value="Delete" class="btn btn-danger" /> 
+                    <a style="text-decoration: none; border: solid 1px #777; padding: 8px 10px; background-color: #F2F2F2; color: #777; display: inline-block; border-radius: 5px; font-size: 14px;" asp-action="Index">Back to List</a>
+                        </form>
+                    </div>
+            </div>
+            
+        </div>
+    </main>
+    <script>
+        function handleFileUpload() {
+            var fileInput = document.getElementById('uploadInput');
+            var cardContent = document.querySelector('.card__content');
+
+            if (fileInput.files.length > 0) {
+                // File is uploaded, update the card content
+                cardContent.innerHTML = '<img src="' + URL.createObjectURL(fileInput.files[0]) + '" alt="Uploaded Image" style="width: 100%; height: 100%;">';
+            }
+        }
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.7.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

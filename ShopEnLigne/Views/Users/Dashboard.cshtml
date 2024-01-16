@@ -1,0 +1,233 @@
+﻿@model ShopEnLigne.Models.Bien
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/StyleDashboard.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ShopEnLigne.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>ECommerce-ShoppingCart | Korsat X Parmaga</title>
+
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-dashboard">
+            <!-- TOP MENU -->
+            <div class="top-menu">
+                <div class="top-menu">
+                    <div class="toggle">
+                        <img src="~/Images/favicon.ico" alt="Your Logo" width="50" height="50" style="margin-left:-8px"/>
+                    </div>
+                </div>
+            </div>
+            <!-- MENU -->
+            <br />
+            <br />
+            <br />
+            <div class="menu">
+                <div  class="enlace">
+                    <i style="margin-left:7px" class="bx bx-log-out"></i>
+                    <a asp-action="Index" asp-controller="Home" style="text-decoration:none;color:#E5D283"><span>Logout</span></a>
+                </div>
+
+
+                <div class="enlace">
+                    <i style="margin-left:7px" class="bx bx-grid-alt"></i>
+                    <a asp-action="Dashboard" asp-controller="Users" style="text-decoration:none;color:#E5D283"><span>Dashboard</span></a>
+                </div>
+
+                <div class="enlace">
+                    <i style="margin-left:7px" class="bx bx-time"></i>
+                    <a asp-action="Index" asp-controller="Historiques" style="text-decoration:none;color:#E5D283"><span>History</span></a>
+                </div>
+
+                <div class="enlace">
+                    <i style="margin-left:7px" class="bx bx-file-blank"></i>
+                    <a asp-action="Index" asp-controller="BlackLists" style="text-decoration:none;color:#E5D283"><span>BlackList</span></a>
+                </div>
+
+                <div class="enlace">
+                    <i style="margin-left:7px" class="bx bx-heart"></i>
+                    <a asp-action="Index" asp-controller="FavoriteLists" style="text-decoration:none;color:#E5D283"><span>FavList</span></a>
+                </div>
+            </div>
+        </div>
+        <div style="margin-left:120px" class="cardcover">
+            <div class="card" id="cardSeller">
+                <div class="title">
+                    <span style="background-color:coral;">
+                        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" width="20">
+                            <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+                        </svg>
+                    </span>
+                    <p class="title-text">
+                        Users 
+                    </p>
+                </div>
+                <div class="data">
+                    <p id="userCount">
+                        N Guest
+                    </p>
+
+                    <div class="range">
+                        <div class="fill" style="background-color:coral;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="cardUser">
+                <div class="title">
+                    <span style="background-color:lightseagreen;">
+                        <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" height="20" fill="currentColor" width="20">
+                            <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+                        </svg>
+                    </span>
+                    <p class="title-text">
+                        Users
+                    </p>
+
+                </div>
+                <div class="data">
+                    <p id="sellerCount">
+                        N Seller
+                    </p>
+
+                    <div class="range">
+                        <div class="fill" style="background-color:lightseagreen;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="cardItem">
+                <div class="title">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" height="20" fill="currentColor" width="20">
+                            <path d="M1362 1185q0 153-99.5 263.5t-258.5 136.5v175q0 14-9 23t-23 9h-135q-13 0-22.5-9.5t-9.5-22.5v-175q-66-9-127.5-31t-101.5-44.5-74-48-46.5-37.5-17.5-18q-17-21-2-41l103-135q7-10 23-12 15-2 24 9l2 2q113 99 243 125 37 8 74 8 81 0 142.5-43t61.5-122q0-28-15-53t-33.5-42-58.5-37.5-66-32-80-32.5q-39-16-61.5-25t-61.5-26.5-62.5-31-56.5-35.5-53.5-42.5-43.5-49-35.5-58-21-66.5-8.5-78q0-138 98-242t255-134v-180q0-13 9.5-22.5t22.5-9.5h135q14 0 23 9t9 23v176q57 6 110.5 23t87 33.5 63.5 37.5 39 29 15 14q17 18 5 38l-81 146q-8 15-23 16-14 3-27-7-3-3-14.5-12t-39-26.5-58.5-32-74.5-26-85.5-11.5q-95 0-155 43t-60 111q0 26 8.5 48t29.5 41.5 39.5 33 56 31 60.5 27 70 27.5q53 20 81 31.5t76 35 75.5 42.5 62 50 53 63.5 31.5 76.5 13 94z">
+                            </path>
+                        </svg>
+                    </span>
+                    <p class="title-text">
+                        Stock
+                    </p>
+
+                </div>
+                <div class="data">
+                    <p id="itemCount">
+                        N item
+                    </p>
+
+                    <div class="range">
+                        <div class="fill">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="cardSalles">
+                <div class="title">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" height="20" fill="currentColor" width="20">
+                            <path d="M1362 1185q0 153-99.5 263.5t-258.5 136.5v175q0 14-9 23t-23 9h-135q-13 0-22.5-9.5t-9.5-22.5v-175q-66-9-127.5-31t-101.5-44.5-74-48-46.5-37.5-17.5-18q-17-21-2-41l103-135q7-10 23-12 15-2 24 9l2 2q113 99 243 125 37 8 74 8 81 0 142.5-43t61.5-122q0-28-15-53t-33.5-42-58.5-37.5-66-32-80-32.5q-39-16-61.5-25t-61.5-26.5-62.5-31-56.5-35.5-53.5-42.5-43.5-49-35.5-58-21-66.5-8.5-78q0-138 98-242t255-134v-180q0-13 9.5-22.5t22.5-9.5h135q14 0 23 9t9 23v176q57 6 110.5 23t87 33.5 63.5 37.5 39 29 15 14q17 18 5 38l-81 146q-8 15-23 16-14 3-27-7-3-3-14.5-12t-39-26.5-58.5-32-74.5-26-85.5-11.5q-95 0-155 43t-60 111q0 26 8.5 48t29.5 41.5 39.5 33 56 31 60.5 27 70 27.5q53 20 81 31.5t76 35 75.5 42.5 62 50 53 63.5 31.5 76.5 13 94z">
+                            </path>
+                        </svg>
+                    </span>
+                    <p class="title-text">
+                        Sales
+                    </p>
+
+                </div>
+                <div class="data">
+                    <p id="itemCount">
+                        17 item
+                    </p>
+
+                    <div class="range">
+                        <div class="fill">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="userBiensChart"></canvas>
+        </div>
+    </div>
+    <script>
+        fetch('/api/userbiens')
+            .then(response => response.json())
+            .then(data => {
+                var ctx = document.getElementById('userBiensChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: data.map(item => item.username),
+                        datasets: [{
+                            label: '# of Biens',
+                            data: data.map(item => item.biensCount),
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        },
+                        responsive: true, // make the chart responsive
+                        maintainAspectRatio: false, // maintain aspect ratio while resizing
+                    }
+                });
+            });
+        fetch('/api/inviteUserCount')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('userCount').innerText = + data + ' Guests';
+            });
+        fetch('/api/ProprietaireUserCount')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('sellerCount').innerText = data + ' Sellers';
+            });
+        fetch('/api/BiensCount')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('itemCount').innerText = data + ' Items';
+            });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const toggle = document.querySelector(".toggle")
+        const menuDashboard = document.querySelector(".menu-dashboard")
+        const iconoMenu = toggle.querySelector("i")
+        const enlacesMenu = document.querySelectorAll(".enlace")
+
+        toggle.addEventListener("click", () => {
+            menuDashboard.classList.toggle("open")
+
+            if (iconoMenu.classList.contains("bx-menu")) {
+                iconoMenu.classList.replace("bx-menu", "bx-x")
+            } else {
+                iconoMenu.classList.replace("bx-x", "bx-menu")
+            }
+        })
+
+        enlacesMenu.forEach(enlace => {
+            enlace.addEventListener("click", () => {
+                menuDashboard.classList.add("open")
+                iconoMenu.classList.replace("bx-menu", "bx-x")
+            })
+        })
+    </script>
+</body>
+</html>

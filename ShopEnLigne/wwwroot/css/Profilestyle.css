@@ -1,0 +1,62 @@
+﻿section {
+    padding: 20px;
+    text-align: center;
+}
+
+.profilePic {
+    width: 200px;
+    height: 200px;
+    background: rgba(211, 211, 211, 0.199);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+    background-image: url('../Images/profile.jpg');
+    background-size: cover;
+    border-radius: 1000px;
+    display: inline-block;
+}
+/*settings buton*/
+.settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 8px;
+    height: 36px;
+    width: 160px;
+    border: none;
+    background: #95a8c2;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    flex-direction: column;
+}
+
+
+.lable {
+    line-height: 20px;
+    font-size: 17px;
+    color: #213555;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    align-self: flex-start;
+}
+
+.settings:hover {
+    background: #d3deed;
+}
+
+    .settings:hover .svg-icon {
+        animation: spin 2s linear infinite;
+    }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

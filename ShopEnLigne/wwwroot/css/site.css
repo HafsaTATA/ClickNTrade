@@ -1,0 +1,549 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 90px;
+    margin: 0 0 60px 0;
+}
+
+
+.nav-link {
+    margin-right: 30px;
+    transform: scale(1.2);
+}
+
+.heart-icon:hover,
+.heart-icon.clicked {
+    color: #B80000 !important; /* Pink color for heart */
+    transform: scale(1.5);
+}
+
+
+.person-icon:hover,
+.person-icon.clicked {
+    color: #05012c !important; /* Blue color for person */
+    transform: scale(1.5);
+}
+
+.cart-icon:hover,
+.cart-icon.clicked {
+    color: #4F709C !important; /* Blue color for cart  */
+    transform: scale(1.5);
+}
+
+
+.icon-click {
+    cursor: pointer;
+}
+
+/**language */
+.checkbox-wrapper-35 .switch {
+    display: none;
+}
+
+    .checkbox-wrapper-35 .switch + label {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #78768d;
+        cursor: pointer;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 12px;
+        line-height: 15px;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        margin-right: 20px;
+    }
+
+        .checkbox-wrapper-35 .switch + label::before,
+        .checkbox-wrapper-35 .switch + label::after {
+            content: '';
+            display: block;
+        }
+
+        .checkbox-wrapper-35 .switch + label::before {
+            background-color: #05012c;
+            border-radius: 500px;
+            height: 15px;
+            margin-right: 8px;
+            -webkit-transition: background-color 0.125s ease-out;
+            transition: background-color 0.125s ease-out;
+            width: 25px;
+        }
+
+        .checkbox-wrapper-35 .switch + label::after {
+            background-color: #fff;
+            border-radius: 13px;
+            box-shadow: 0 3px 1px 0 rgba(37, 34, 71, 0.05), 0 2px 2px 0 rgba(37, 34, 71, 0.1), 0 3px 3px 0 rgba(37, 34, 71, 0.05);
+            height: 13px;
+            left: 1px;
+            position: absolute;
+            top: 1px;
+            -webkit-transition: -webkit-transform 0.125s ease-out;
+            transition: -webkit-transform 0.125s ease-out;
+            transition: transform 0.125s ease-out;
+            transition: transform 0.125s ease-out, -webkit-transform 0.125s ease-out;
+            width: 13px;
+        }
+
+        .checkbox-wrapper-35 .switch + label .switch-x-text {
+            display: block;
+            margin-right: .3em;
+        }
+
+        .checkbox-wrapper-35 .switch + label .switch-x-toggletext {
+            display: block;
+            font-weight: bold;
+            height: 15px;
+            overflow: hidden;
+            position: relative;
+            width: 50px;
+        }
+
+        .checkbox-wrapper-35 .switch + label .switch-x-unchecked,
+        .checkbox-wrapper-35 .switch + label .switch-x-checked {
+            left: 0;
+            position: absolute;
+            top: 0;
+            -webkit-transition: opacity 0.125s ease-out, -webkit-transform 0.125s ease-out;
+            transition: opacity 0.125s ease-out, -webkit-transform 0.125s ease-out;
+            transition: transform 0.125s ease-out, opacity 0.125s ease-out;
+            transition: transform 0.125s ease-out, opacity 0.125s ease-out, -webkit-transform 0.125s ease-out;
+        }
+
+        .checkbox-wrapper-35 .switch + label .switch-x-unchecked {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+
+        .checkbox-wrapper-35 .switch + label .switch-x-checked {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+        }
+
+        .checkbox-wrapper-35 .switch + label .switch-x-hiddenlabel {
+            position: absolute;
+            visibility: hidden;
+        }
+
+    .checkbox-wrapper-35 .switch:checked + label::before {
+        background-color: #E5D283;
+    }
+
+    .checkbox-wrapper-35 .switch:checked + label::after {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0);
+    }
+
+    .checkbox-wrapper-35 .switch:checked + label .switch-x-unchecked {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    .checkbox-wrapper-35 .switch:checked + label .switch-x-checked {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+/*Home page: */
+.welcome {
+    font-family: 'Poppins', sans-serif;
+    font-size: 65px;
+    font-weight: bold;
+    margin-top: 30px;
+    line-height: 1.2; /* Adjust the line height as needed */
+}
+
+.subWelcome {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+#sec1 {
+    /* Add your background pattern here */
+    background-color: #F0F0F0;
+    background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+    background-size: 30px 30px;
+    background-position: -5px 3px;
+    padding: 20px;
+    margin-top: -20px;
+    height: 480px;
+}
+
+.card {
+    width: 240px;
+    height: 320px;
+    background: rgba(211, 211, 211, 0.199);
+    position: absolute;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.sec1c1 {
+    background-image: url('../Images/jeep1.jpg');
+    background-size: cover;
+}
+
+.sec1c2 {
+    background-image: url('../Images/moto.jpg');
+    background-size: cover;
+}
+
+.sec1c3 {
+    background-image: url('../Images/bmw2.jpg');
+    background-size: cover;
+}
+
+.sec1c4 {
+    background-image: url('../Images/merc5.jpg');
+    background-size: cover;
+}
+
+
+.main:hover #c1 {
+    transform: translateX(-100px) rotate(-40deg);
+}
+
+.main:hover #c2 {
+    transform: translateX(-50px) rotate(-30deg);
+}
+
+.main:hover #c3 {
+    transform: translateX(0) rotate(-20deg);
+}
+
+.main:hover #c4 {
+    transform: translateX(50px) rotate(-10deg);
+}
+
+#c1:hover {
+    transform: translateX(-150px) rotate(0deg) !important;
+}
+
+#c2:hover {
+    transform: translateX(-100px) rotate(0deg) !important;
+}
+
+#c3:hover {
+    transform: translateX(-50px) rotate(0deg) !important;
+}
+
+#c4:hover {
+    transform: translateX(50px) rotate(0deg) !important;
+}
+
+.main {
+    display: grid;
+    height: 50vmax;
+    place-items: center;
+}
+
+.category_intro {
+    font-family: 'Poppins', sans-serif;
+    color: #F0F0F0;
+    text-align: center;
+}
+
+    .category_intro h2 {
+        font-size: 3em;
+        margin-bottom: 10px;
+    }
+
+    .category_intro p {
+        font-size: 1em;
+        font-weight: 200;
+        margin-bottom: 15px;
+    }
+
+.sec2c4{
+    background-image: url('../Images/electronics.jpg');
+    background-size: cover;
+}
+.sec2c3 {
+    background-image: url('../Images/house2.jpg');
+    background-size: cover;
+}
+.sec2c2 {
+    background-image: url('../Images/house.jpg');
+    background-size: cover;
+}
+
+.sec2c1{
+    background-image: url('../Images/house3.jpg');
+    background-size: cover;
+}
+
+.sec3c4, .sec3c2, .sec3c1 {
+    background-image: url('../Images/clothe4.jpg');
+    background-size: cover;
+}
+
+.sec3c3 {
+    background-image: url('../Images/clothes.jpg');
+    background-size: cover;
+}
+
+.sec3c2 {
+    background-image: url('../Images/clothe3.jpg');
+    background-size: cover;
+}
+
+.sec3c1 {
+    background-image: url('../Images/clothe2.jpg');
+    background-size: cover;
+}
+
+.sec3 {
+    color: #213555;
+}
+
+#fixedBottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 110%; /* Set to 100% to take the whole screen width */
+    background-color: #E5D283;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    overflow: hidden; /* Hide the overflow to prevent scrollbar */
+    white-space: nowrap;
+}
+
+.RightToLeft {
+    white-space: nowrap;
+    display: inline-block;
+    animation: RightToLeft 40s infinite linear;
+}
+
+@keyframes RightToLeft {
+    from {
+        transform: translateX(50%); /* Start from the right edge */
+    }
+
+    to {
+        transform: translateX(-100%); /* Move to the left edge */
+    }
+}
+/*SLIDES FROM HERE*/
+.scrolling-container {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 40px;
+}
+
+.sale-product {
+    min-width: 20%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 20px;
+    scroll-snap-align: center;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px gray;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 4px;
+}
+
+#onSale {
+    margin: 88px 0 -10px 0;
+    font-family: Poppins;
+    font-size: 2em;
+    color: #212529;
+    font-weight: 700;
+}
+
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+}
+
+.sale-product {
+    text-align: left; /* Align text to the left */
+    backdrop-filter: blur(5px);
+}
+
+.sale {
+    text-transform: uppercase;
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #212529;
+    padding: 10px 7px 0;
+}
+
+    .sale:hover {
+        cursor: pointer;
+    }
+
+.description {
+    font-weight: 600;
+    color: #808080;
+    padding: 0 7px;
+}
+
+.date {
+    font-size: 0.7em;
+    font-weight: 400;
+    color: #212529;
+    padding-left: 7px;
+}
+
+    .description:hover {
+        cursor: pointer;
+    }
+
+.price {
+    color: #808080; /* Gray color for the original price */
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 5px; /* Reduced padding */
+    text-decoration: line-through; /* Add line-through property */
+}
+
+.newprice {
+    color: darkred;
+    font-weight: 400;
+    font-size: 1em;
+    padding-top: 5px; /* Reduced padding */
+}
+
+/*---signin_out---*/
+
+/*-----categories list ------*/
+.categories-dropdown {
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 170px;
+}
+
+    .categories-dropdown a {
+        color: #666 !important; /* Dark gray color with !important */
+        text-decoration: none !important; /* Remove underline with !important */
+        font-size: 0.9em;
+    }
+
+.nav-item:hover .categories-dropdown,
+.nav-item:focus-within .categories-dropdown {
+    display: block;
+}
+
+/* Optional: Add some styles for the list items */
+.categories-dropdown li {
+    margin-bottom: 5px;
+}
+
+
+/*search bar*/
+#search-results {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    width: 30% !important; /* Add !important here */
+    max-height: 100px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    left: 50%;
+    transform: translateX(-50%) !important;
+    text-align: left; /* Adjust text alignment */
+}
+
+    #search-results .result {
+        padding: 8px;
+        border-bottom: 1px solid #eee;
+        list-style: none !important;
+    }
+
+    /* Optional: Add styles for the scrollbar */
+    #search-results::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #search-results::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px gray;
+        border-radius: 4px;
+    }
+
+    #search-results::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 4px;
+    }
+
+
+/*---add seller---*/
+button {
+    border: 2px;
+    background-color: #cbd6e4;
+    border-radius: 0.9em;
+    padding: 0.8em 1.2em 0.8em 1em;
+    transition: all ease-in-out 0.2s;
+    font-size: 16px;
+    height: 30px; /* Set the height */
+    display: flex; /* Add this */
+    align-items: center; /* Add this */
+    justify-content: center; /* Add this */
+    margin-right: 10px;
+}
+
+    button span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    button:hover {
+        background-color:   #4F709C;
+            
+    }

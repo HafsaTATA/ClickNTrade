@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ShopEnLigne.Models.Bien>
+<style>
+    #searchResults {
+        max-height: 50px; /* Set the maximum height for the div */
+        overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+        padding: 10px; /* Add some padding for spacing */
+    }
+
+    .search-result-item {
+        /* Add styles for each search result item if needed */
+        margin-bottom: 5px; /* Add some spacing between search result items */
+    }
+</style>
+
+<div id="searchResults">
+    @foreach (var result in Model)
+    {
+        <div class="search-result-item">
+            <!-- Customize the display of each search result item -->
+            <h6>@result.Titre</h6>
+        </div>
+    }
+</div>
+
+
+
+
+

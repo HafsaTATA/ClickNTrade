@@ -1,0 +1,149 @@
+﻿@model IEnumerable<ShopEnLigne.Models.FavoriteList>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/StyleDashboard.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ShopEnLigne.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>ECommerce-ShoppingCart | Korsat X Parmaga</title>
+
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="menu-dashboard">
+            <!-- TOP MENU -->
+            <div class="top-menu">
+                <div class="toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+            <!-- MENU -->
+            <br />
+            <br />
+            <br />
+            <div class="menu">
+                <div class="enlace">
+                    <i class="bx bx-log-out"></i>
+                    <a asp-action="Index" asp-controller="Home" style="text-decoration:none;color:#E5D283"><span>Logout</span></a>
+                </div>
+
+
+                <div class="enlace">
+                    <i class="bx bx-grid-alt"></i>
+                    <a asp-action="Dashboard" asp-controller="Users" style="text-decoration:none;color:#E5D283"><span>Dashboard</span></a>
+                </div>
+
+                <div class="enlace">
+                    <i class="bx bx-time"></i>
+                    <a asp-action="Index" asp-controller="Historiques" style="text-decoration:none;color:#E5D283"><span>History</span></a>
+                </div>
+
+                <div class="enlace">
+                    <i class="bx bx-file-blank"></i>
+                    <a asp-action="Index" asp-controller="BlackLists" style="text-decoration:none;color:#E5D283"><span>BlackList</span></a>
+                </div>
+
+                <div class="enlace">
+                    <i class="bx bx-heart"></i>
+                    <a asp-action="Index" asp-controller="FavoriteLists" style="text-decoration:none;color:#E5D283"><span>FavList</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="bodycontent" style="text-align: center;">
+            <div>
+                <h1 style="color:darkslategray;margin-left:500px;">Favorite list</h1>
+                <table class="table">
+                    <thead>
+                        <tr style=" background-color: #4F709C;">
+                            <th>
+                                @Html.DisplayNameFor(model => model.User)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <p>
+                        <a style="color:black" asp-action="Create">Create New</a>
+                    </p>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.User.Username)
+                                </td>
+                                <td class="btn-container">
+                                    @Html.ActionLink("Edit", "Edit", "FavoriteLists", new { id = item.Id }, new { @class = "btn btn-outline-secondary" })
+                                    @Html.ActionLink("Delete", "Delete", "FavoriteLists", new { id = item.Id }, new { @class = "btn btn-outline-danger" })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <style>
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                    margin-left: 250px; /* Add margin for spacing */
+                }
+
+                th, td {
+                    padding: 15px;
+                    text-align: left;
+                    border-bottom: 1px solid #ddd;
+                    color:#5A5A5A;
+                    
+                }
+
+                td {
+                    background-color: #F0F0F0;
+                }
+
+                th {
+                    color: darkgray;
+                    width: 200px;
+                }
+
+            </style>
+        </div>
+    </div>
+    <script>
+        const toggle = document.querySelector(".toggle")
+        const menuDashboard = document.querySelector(".menu-dashboard")
+        const iconoMenu = toggle.querySelector("i")
+        const enlacesMenu = document.querySelectorAll(".enlace")
+
+        toggle.addEventListener("click", () => {
+            menuDashboard.classList.toggle("open")
+
+            if (iconoMenu.classList.contains("bx-menu")) {
+                iconoMenu.classList.replace("bx-menu", "bx-x")
+            } else {
+                iconoMenu.classList.replace("bx-x", "bx-menu")
+            }
+        })
+
+        enlacesMenu.forEach(enlace => {
+            enlace.addEventListener("click", () => {
+                menuDashboard.classList.add("open")
+                iconoMenu.classList.replace("bx-menu", "bx-x")
+            })
+        })
+
+    </script>
+</body>
+</html>

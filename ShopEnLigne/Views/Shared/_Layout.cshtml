@@ -1,0 +1,118 @@
+﻿﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ClickNTrade </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ShopEnLigne.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico">
+
+
+</head>
+<body>
+    <header id="test">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="margin-left:15px;">
+                    <img src="~/Images/favicon.ico" alt="Your Logo" width="50" height="50">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="nav-link text-dark">
+                                Categories
+                                <ul class="categories-dropdown">
+                                    <!-- List of categories with data-category attribute -->
+                                    <li><a href="@Url.Action("ProductsByCategory", "Biens", new { categoryId = 1 })">Vehicles</a></li>
+                                    <li><a href="@Url.Action("ProductsByCategory", "Biens", new { categoryId = 3 })">Clothes</a></li>
+                                    <li><a href="@Url.Action("ProductsByCategory", "Biens", new { categoryId = 2 })">Household Appliances</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    @section Scripts {
+                        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                        <script>
+                            $(document).ready(function () {
+                                $('.categories-dropdown a').on('click', function (e) {
+                                    e.preventDefault();
+
+                                    // Get the selected category from data-category attribute
+                                    var selectedCategory = $(this).data('category');
+
+                                    // Update the URL based on the selected category
+                                    var newUrl = '@Url.Action("ProductsByCategory", "BiensController")' + '?categoryId=' + selectedCategory;
+
+                                    // Navigate to the new URL
+                                    window.location.href = newUrl;
+                                });
+                            });
+                        </script>
+                    }
+
+                    <button id="becomeSellerBtn" class="Btn">
+                        <div class="text">+ Become a Seller</div>
+                    </button>
+
+                    <script>
+                        document.getElementById("becomeSellerBtn").addEventListener("click", function () {
+                            // Redirect to the specified URL
+                            window.location.href = '@Url.Action("LoginProprietaire", "Users")';
+                        });
+                    </script>
+
+                    <!--language-->
+                    <div class="checkbox-wrapper-35">
+                        <input value="private" name="switch" id="switch" type="checkbox" class="switch">
+                        <label for="switch">
+                            <span class="switch-x-text"> </span>
+                            <span class="switch-x-toggletext">
+                                <span class="switch-x-unchecked"><span class="switch-x-hiddenlabel">Unchecked: </span>English</span>
+                                <span class="switch-x-checked"><span class="switch-x-hiddenlabel">Checked: </span>Francais</span>
+                            </span>
+                        </label>
+                    </div>
+                    <!-- en /french -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link person-icon icon-click" data-target="personIcon" asp-area="" asp-controller="Users" asp-action="Login">
+                                <i class="bi bi-person"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer id="test1" class="border-top footer text-muted" style=" margin-top:20px;">
+        <div class="container">
+            &copy; 2023 - ClickNTrade - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

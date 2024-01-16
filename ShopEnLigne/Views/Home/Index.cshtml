@@ -1,0 +1,257 @@
+﻿@model List<ShopEnLigne.Models.OffreSpeciale>
+
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ShopEnLigne.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy/Z1Qq21xz9Kx2xgCIhP8qX8e9FqEUKjC" crossorigin="anonymous">
+
+    <style>
+        section {
+            margin-right: -100px;
+            margin-left: -100px;
+        }
+
+        .yellow {
+            color: #E5D283; /* Yellow color */
+        }
+
+        .group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 40px; /* Add margin-top as needed */
+            position: relative;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .input {
+            width: 100%;
+            height: 40px;
+            line-height: 28px;
+            padding: 0 1rem;
+            padding-left: 2.5rem;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            outline: none;
+            background-color: #f3f3f4;
+            color: #0d0c22;
+            transition: 0.3s ease;
+        }
+
+
+            .input::placeholder {
+                color: #9e9ea7;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 200;
+            }
+
+            .input:focus,
+            input:hover {
+                outline: none;
+                border-color: #4F709C;
+                background-color: #fff;
+                box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+            }
+
+        .icon {
+            position: absolute;
+            left: 0.75rem; /* Adjust the left position as needed */
+            top: 50%; /* Center the icon vertically */
+            transform: translateY(-50%); /* Center the icon vertically */
+            fill: #9e9ea7;
+            width: 1rem;
+            height: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="sec1" style="height:900px">
+        <div class="container-fluid text-center">
+            <div class="welcome">
+
+                <p>Discover <br /> <span class="yellow">a world </span> <br />of endless possibilities.</p>
+            </div>
+
+            <div class="group">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+                    <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                    </g>
+                </svg>
+                <input class="input" id="searchInput" type="search" placeholder="Search for product" />
+            </div>
+            <div id="searchResults">
+                <!-- Display search results here -->
+            </div>
+        </div>
+        @section Scripts {
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    // Handle keyup event on the search input
+                    $("#searchInput").on("keyup", function () {
+                        // Call the search function when typing
+                        performSearch();
+                    });
+
+                    // Function to perform the search
+                    function performSearch() {
+                        // Get the search input value
+                        var searchValue = $("#searchInput").val();
+
+                        // Make an AJAX request to the server for searching
+                        $.ajax({
+                            url: "/Home/Search", // Replace with your actual controller/action
+                            type: "GET",
+                            data: { searchTerm: searchValue },
+                            success: function (data) {
+                                // Update the search results div with the returned data
+                                $("#searchResults").html(data);
+                            },
+                            error: function () {
+                                console.error("Error occurred during search.");
+                            }
+                        });
+                    }
+                });
+            </script>
+        }
+        <!--SLIDES HERE-->
+
+        <h2 id="onSale" class="d-flex align-items-center justify-content-center">
+            Products on Sale
+            <img id="gift" src="~/Images/gift-box.png" height="50" width="50"   />
+        </h2>
+
+        <div class="scrolling-container" id="scrolling-container">
+
+            <!-- Your sale product elements go here -->
+            @foreach (var offreSpeciale in Model)
+            {
+                <div class="sale-product">
+                    <div class="card-image" style="background-image: url('../Images/@offreSpeciale.Bien.Photo')"></div>
+                    <div class="sale">@offreSpeciale.TauxRemise%</div>
+                    <div class="date"><label>Date debut: </label> @offreSpeciale.DateDebut</div>
+                    <div class="date"><label>Date Fin: </label>@offreSpeciale.DateFin</div>
+                    <div class="description">
+                        <div class="Name">@offreSpeciale.Name</div>
+                        <div class="price">$ @offreSpeciale.Bien.Prix </div>
+
+                        @{
+                            double? prixReduit = offreSpeciale.Bien.Prix - (offreSpeciale.Bien.Prix * offreSpeciale.TauxRemise / 100);
+                        }
+                        <div class="newprice">$ @prixReduit</div>
+
+                    </div>
+                </div>
+            }
+        </div>
+
+    </section>
+
+
+    <section id="sec2" style="background-color: #213555; padding: 20px; height: 500px;">
+        <div class="container-fluid text-center">
+            <div class="row" style="margin-top:70px;">
+                <!-- Left column with text -->
+                <div class="col-md-6">
+                    <div class="category_intro" style="margin-left:70px;">
+                        <h2>Explore the World of Exceptional Vehicles</h2>
+                        <p> Whether you're a car enthusiast, motorcycle lover, or adventure seeker, our diverse range of vehicles promises excitement, performance, and unmatched craftsmanship.</p>
+                        <p>Why settle for ordinary when you can experience extraordinary? Browse through our Vehicles category and embark on a journey where form meets function, and the thrill of the ride knows no bounds. </p>
+                    </div>
+                </div>
+
+                <!-- Right column with image -->
+                <div class="col-md-6 d-flex align-items-center justify-content-center position-relative">
+                    <div class="main position-absolute" id="vehicules">
+                        <div class="card sec1c1" id="c1"></div>
+                        <div class="card sec1c2" id="c2"></div>
+                        <div class="card sec1c3" id="c3"></div>
+                        <div class="card sec1c4" id="c4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section style="background-color: #87CEEB; padding: 20px; height: 500px;">
+        <div class="container-fluid text-center">
+            <div class="row" style="margin-top:70px;">
+                <!-- Left column with text -->
+                <div class="col-md-6 d-flex align-items-center justify-content-center position-relative">
+                    <div class="main position-absolute" id="electronics">
+                        <div class="card sec2c1" id="c1"></div>
+                        <div class="card sec2c2" id="c2"></div>
+                        <div class="card sec2c3" id="c3"></div>
+                        <div class="card sec2c4" id="c4"></div>
+                    </div>
+                </div>
+                <!-- Right column with image -->
+                <div class="col-md-6">
+                    <div class="category_intro" style="margin-left:-100px;padding-right:20px;">
+                        <h2>Discover Innovative Household Appliances</h2>
+                        <p>Upgrade your living space with our cutting-edge household appliances designed to make your daily routines more efficient and enjoyable.</p>
+                        <p>Explore our Household Appliances category to find a variety of solutions for cooking, cleaning, and organizing. From smart kitchen gadgets to energy-efficient laundry appliances, we have everything you need to create a more comfortable and connected home environment.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: #E5D283; padding: 20px; height:500px">
+        <div class="container-fluid text-center ">
+            <div class="row" style="margin-top:70px;">
+                <!-- Left column with text -->
+                <div class="col-md-6">
+                    <div class="category_intro sec3" style="margin-left:70px;">
+                        <h2>Elevate Your Style with Trendy Clothing</h2>
+                        <p>Step into the world of fashion and express your unique style with our diverse collection of clothing. From casual wear to elegant ensembles, we have the perfect pieces to complement every occasion.</p>
+                        <p>Explore the latest trends, fabrics, and designs curated to inspire confidence and self-expression. Whether you're updating your wardrobe with timeless classics or experimenting with bold, statement pieces, our Clothing category has something for everyone.</p>
+                    </div>
+                </div>
+
+                <!-- Right column with image -->
+                <div class="col-md-6 d-flex align-items-center justify-content-center position-relative">
+                    <div class="main position-absolute" id="clothes">
+                        <div class="card sec3c1" id="c1"></div>
+                        <div class="card sec3c2" id="c2"></div>
+                        <div class="card sec3c3" id="c3"></div>
+                        <div class="card sec3c4" id="c4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fixedBottom">
+        <div class="RightToLeft">
+            <p id="fixed_text">
+                Explore our exclusive collection of <strong>discounted products!</strong>  Uncover unbeatable deals and extraordinary savings on a wide range of items. From fashion to electronics, home decor to gadgets – we have something special for everyone. Don't miss out on <strong>these limited-time offers!</strong> Hurry and discover the joy of smart shopping with our exciting discounts. Check out our products on sale now and treat yourself to quality at unbeatable prices!
+            </p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy/Z1Qq21xz9Kx2xgCIhP8qX8e9FqEUKjC" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+Wy/Z1Qq21xz9Kx2xgCIhP8qX8e9FqEUKjC" crossorigin="anonymous"></script>
+</body>
+</html>
